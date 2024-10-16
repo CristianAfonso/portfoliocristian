@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+#go_top_button {
+  font-size: 24px;
+  border: 1px solid #0F3460;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+}
+#go_top_button:hover {
+  background-color: #1A1A2E;
+  border-color: #E94560;
+}
+#go_top_button svg {
+  width: 28px;
+  height: 28px;
+}/*# sourceMappingURL=GoTopButton.module.css.map */

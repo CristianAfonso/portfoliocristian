@@ -1,0 +1,22 @@
+@import './variables';
+@import './mixins';
+@import './global';
+
+section{
+    max-width: 75%;
+    margin: 25px auto;
+    width: 1600px;
+}
+
+.fixed-highlight-border {
+    position: fixed;
+    top: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px $secondary-background;
+    height: 3px;
+    width: 3px;
+    background-color: $secondary-background; 
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+  }
+  

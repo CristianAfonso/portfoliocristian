@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+
+.repository_card{
+    width: 100%;
+    border-radius: 15px;
+    padding: 0;
+    border: 1px solid $light-text;
+    margin-bottom: 15px;
+    .repository_title{
+        background-color: $secondary-background;
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        width: 100%;
+        border-radius: 15px;
+        border-bottom: none;
+    }
+    .repository_content{
+        padding: 15px;
+        .repository_languages_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: start;
+            .repository_language{
+                padding: 10px;
+                border-radius: 15px;
+                background-color: $secondary-background;
+            }
+        }
+    }
+}

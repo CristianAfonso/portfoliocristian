@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.proficiency_container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  border-top: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: #333333 3px 3px 2px;
+}
+.proficiency_container > button {
+  width: 0px;
+  height: 400px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+.proficiency_container > button:hover {
+  cursor: pointer;
+  width: 250px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.proficiency_container > button:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.proficiency_container > button:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.proficiency_container .selected {
+  width: 250px !important;
+  opacity: 1 !important;
+  filter: contrast(120%) !important;
+}/*# sourceMappingURL=Skills.module.css.map */

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.footer {
+  background-color: #16213E;
+  padding: 1rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  bottom: 0;
+  flex-grow: 1;
+  margin-top: 50px;
+}
+.footer .footer_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer_container a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer .footer_container a:hover {
+  color: #E94560;
+}
+.footer .footer_container .left_footer_container {
+  width: calc(50vw - 1px);
+}
+.footer .footer_container .vertical_line {
+  height: 100px;
+  border: 1px solid #EAEAEA;
+  opacity: 0.25;
+  margin: 0;
+}
+.footer .footer_container .right_footer_container {
+  gap: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  font-size: 24px;
+  width: calc(50vw - 1px);
+}
+.footer span {
+  text-align: left;
+  margin-left: 15px;
+}/*# sourceMappingURL=Footer.module.css.map */

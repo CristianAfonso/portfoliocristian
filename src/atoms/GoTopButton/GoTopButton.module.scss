@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+#go_top_button{
+    font-size: 24px;
+    border: 1px solid $accent-color-1;
+    @include flex-center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px #00000080;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+    &:hover {
+      background-color: $background-color;
+      border-color: $accent-color-2;
+    }
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+}

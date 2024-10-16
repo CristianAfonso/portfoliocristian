@@ -1,0 +1,10 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive-font-size($min, $max) {
+    font-size: calc(#{$min} + (#{$max} - #{$min}) * ((100vw - 320px) / (1600 - 320)));
+  }
+  

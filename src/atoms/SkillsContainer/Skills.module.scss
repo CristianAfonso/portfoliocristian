@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+.proficiency_container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-top: 2px solid $light-text;
+    border-bottom: 2px solid $light-text;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: #333333 3px 3px 2px;
+    
+    >button{
+        width: 0px;
+        height: 400px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: all .5s ease;
+        &:hover{
+            cursor: pointer;
+            width: 250px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+        &:first-child{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        &:last-child{
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    
+    .selected{
+        width: 250px !important;
+        opacity: 1 !important;
+        filter: contrast(120%) !important;
+    }
+}

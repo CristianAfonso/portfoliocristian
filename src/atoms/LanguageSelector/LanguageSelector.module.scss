@@ -1,0 +1,72 @@
+@import '../../styles/variables';
+.languages_selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    overflow: visible;
+    button{
+      border: none;
+      &:hover{
+        transform: none;
+        color: $light-text;
+      }
+    }
+    .language_icons{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 0;
+      transition: all 0.1s ease-in;
+      &:hover{
+        color: $accent-color-2;
+        cursor: pointer;
+      }
+    }
+    .dropdown_menu{
+      top: 33px;
+      background-color: $background-color;
+      border: 1px solid $light-text;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      margin: 1.5vh auto auto;
+      z-index: 3;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      button{
+        border-radius: 0;
+        transition: none !important;  
+        border: none !important;
+        height: auto;
+        padding: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        &:hover{
+          background-color: $light-text;
+          color: $background-color !important;
+          transform: none !important;
+        }
+        
+        &:first-child {
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+  
+        &:last-child {
+          border-bottom-left-radius: 15px; 
+          border-bottom-right-radius: 15px;
+        }
+      }
+      .active{
+        background-color: $accent-color-1 !important;
+        color: $light-text !important;
+        &:hover{
+          background-color: $light-text !important;
+          color: $background-color !important;
+        }
+      }
+    }
+  }

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.proficiency_card {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-left: 1px solid #EAEAEA;
+  border-right: 1px solid #EAEAEA;
+  border-bottom: none;
+  border-top: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EAEAEA;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+}
+
+.proficiency_fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: height 0.3s ease;
+}
+
+.proficiency_gray_fill {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  filter: grayscale(1);
+  width: 100%;
+  transition: height 0.3s ease;
+}
+
+.proficiency_img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  background-color: #fff;
+  box-shadow: 0 0 5px #444;
+  z-index: 1;
+}
+
+.proficiency_text {
+  color: #EAEAEA;
+  background-color: #444;
+  padding: 4px 8px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=ProficiencyCard.module.css.map */
