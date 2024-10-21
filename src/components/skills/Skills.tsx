@@ -1,32 +1,30 @@
 import React from "react";
-import { ProficiencyCardPropsModel } from "../../models";
-import SkillsContainer from "../../atoms/SkillsContainer/SkillsContainer";
 import { constructNewSkillSet } from "../../helpers/languagesHelper";
 import { useTranslation } from "react-i18next";
 
 const Skills: React.FC = () => {
     const {t} = useTranslation();
     
-    const frontend: { [key: string]: number }[] = [
-        { 'JavaScript': 85 },
-        { 'React': 90 },
-        { 'TypeScript': 80 },
-        { 'Vue3': 75 },
-        { 'Sass': 65 }
+    const frontend: string[] = [
+        'JavaScript',
+        'React',
+        'TypeScript',
+        'Vue3',
+        'Sass'
     ];
     
-    const backend: { [key: string]: number }[] = [
-        { 'Node.js': 85 },
-        { 'Go': 70 },
-        { 'PHP': 65 },
-        { 'Java': 60 },
-        { 'Laravel': 75 }
+    const backend: string[] = [
+        'Node.js',
+        'Go',
+        'PHP',
+        'Java',
+        'Laravel'
     ];
     
-    const databases: { [key: string]: number }[] = [
-        { 'PostgreSQL': 80 },
-        { 'MySQL': 85 },
-        { 'MariaDB': 70 }
+    const databases: string[] = [
+        'PostgreSQL',
+        'MySQL',
+        'MariaDB'
     ];
     
     

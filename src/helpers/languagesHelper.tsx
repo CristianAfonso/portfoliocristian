@@ -1,15 +1,14 @@
 import { ProficiencyCardPropsModel } from "../models";
 import SkillsContainer from "../atoms/SkillsContainer/SkillsContainer";
 
-export function constructNewSkillSet(languages: { [key: string]: number}[], title: string, showContent: boolean) {
+export function constructNewSkillSet(languages: string[], title: string, showContent: boolean) {
     const res_techs: ProficiencyCardPropsModel[] = [];
-    languages.forEach(languageObj => {
-        Object.entries(languageObj).forEach(([language]) => {
+        languages.forEach((language) => {
         const foundElement:ProficiencyCardPropsModel | undefined= techs.find(element => element.title === language);
         if(foundElement){
             res_techs.push(foundElement);
         }
-    })});
+    });
     return <SkillsContainer title={title} content={res_techs} showContent={showContent} />
 }
 

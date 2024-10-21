@@ -18,6 +18,15 @@ export interface SkillsContainerModel{
 export interface RepoModel{
     name: string,
     url:string,
-    languages: {[key: string]: number}[],
+    languages: string[],
     last_update: Date,
+}
+
+export interface JobSectionProps {
+    startDate: string;     
+    endDate: string;       
+    company: string;       
+    role: string;          
+    description: string;   
+    technologies: string[];
 }
