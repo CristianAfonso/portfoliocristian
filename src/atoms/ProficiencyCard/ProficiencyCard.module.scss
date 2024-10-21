@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+
 .proficiency_card {
     position: relative;
     width: 150px;
@@ -13,6 +14,7 @@
     display: flex;
     align-items:  center;
     justify-content: center;
+    margin: auto;
     color: $light-text;
     font-weight: bold;
     font-size: 1.2em;
@@ -38,7 +40,10 @@
     transition: height 0.3s ease;
   }
   .proficiency_img{
-    width: 50%;
+    object-fit:contain;
+    padding: 15px;
+    aspect-ratio: 1 / 1; 
+    width: calc(50% - 30px);
     height: auto;
     margin: auto;
     border-radius: 5px;

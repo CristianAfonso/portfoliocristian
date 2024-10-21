@@ -5,7 +5,7 @@ import { SkillsContainerModel } from "../../models";
 import { useTranslation } from "react-i18next";
 import styles from './Skills.module.css';
 
-const SkillsContainer:React.FC<SkillsContainerModel> = ({title, content}) => {
+const SkillsContainer:React.FC<SkillsContainerModel> = ({title, content, showContent}) => {
 
     const [selectedTech, setSelectedTech] = useState(content[0].abbreviation);
     const {t} = useTranslation();
@@ -16,10 +16,10 @@ const SkillsContainer:React.FC<SkillsContainerModel> = ({title, content}) => {
 
     return(
         <div className={styles.skills_container}>
-            <h3>
+            <h2>
                 {title}
-            </h3>
-            <div className={styles.proficiency_container}>
+            </h2>
+            <div className={styles.proficiency_container} style={{maxWidth: `${content.length == 1 ?  '500px' : null}`}}>
                 {content.map((element, index) => (
                   <ProficiencyCard
                         key={index}
@@ -31,14 +31,14 @@ const SkillsContainer:React.FC<SkillsContainerModel> = ({title, content}) => {
                         color={element.color} abbreviation={element.abbreviation}/>
                 ))}
             </div>
-            <div className='proficiency_content'>
+            {showContent && <div className='proficiency_content'>
                 <h3>
                     {t(`skills.${selectedTech}.title`)}
                 </h3>
                 <span>
                     {t(`skills.${selectedTech}.content`)}
                 </span>
-            </div>
+            </div>}
         </div>
     )
 }

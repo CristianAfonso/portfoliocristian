@@ -27,6 +27,9 @@ section {
   max-width: 75%;
   margin: 25px auto;
   width: 1600px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .fixed-highlight-border {
@@ -39,4 +42,13 @@ section {
   background-color: #16213E;
   transition: background-color 0.3s ease;
   z-index: 9999;
+}
+
+a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  filter: drop-shadow(1px 1px 1px #E94560);
 }/*# sourceMappingURL=main.css.map */

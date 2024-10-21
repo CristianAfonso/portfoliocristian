@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   color: #EAEAEA;
   font-weight: bold;
   font-size: 1.2em;
@@ -40,7 +41,11 @@
 }
 
 .proficiency_img {
-  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 15px;
+  aspect-ratio: 1/1;
+  width: calc(50% - 30px);
   height: auto;
   margin: auto;
   border-radius: 5px;

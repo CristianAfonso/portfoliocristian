@@ -9,6 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
+      <Link to="/"><img alt="Logo" src={`${process.env.PUBLIC_URL}/CristianAfonso.png`}/></Link>
       <nav>
         <ul>
           <li><Link to="/">{t('header.aboutMe')}</Link></li>

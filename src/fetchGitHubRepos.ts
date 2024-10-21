@@ -32,7 +32,7 @@ const getLanguages = async (url: string) => {
             Authorization: `token ${token}`,
           },
         });
-        return response.data;
+        return Object.entries(response.data).map(([key, value]) => ({ [key]: value }));
 
       } catch (error) {
         console.error('Error fetching repository languages:', error);

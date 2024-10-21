@@ -23,8 +23,10 @@
   transition: all 0.1s ease-in;
 }
 .languages_selector .language_icons:hover {
-  color: #E94560;
   cursor: pointer;
+}
+.languages_selector .language_icons:hover > svg {
+  filter: drop-shadow(1px 1px 1px #E94560);
 }
 .languages_selector .dropdown_menu {
   top: 33px;

@@ -21,8 +21,12 @@
       padding: 0;
       transition: all 0.1s ease-in;
       &:hover{
-        color: $accent-color-2;
         cursor: pointer;
+        
+        >svg{
+          -webkit-filter: drop-shadow(1px 1px 1px $accent-color-2);
+          filter: drop-shadow(1px 1px 1px $accent-color-2);
+        }
       }
     }
     .dropdown_menu{

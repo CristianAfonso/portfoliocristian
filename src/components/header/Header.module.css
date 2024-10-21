@@ -6,6 +6,9 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.header img {
+  width: 200px;
+}
 .header nav ul {
   display: flex;
   list-style: none;
@@ -14,12 +17,4 @@
 }
 .header nav ul li {
   margin: 0 1rem;
-}
-.header nav ul li a {
-  color: #EAEAEA;
-  text-decoration: none;
-  font-weight: 500;
-}
-.header nav ul li a:hover {
-  color: #E94560;
 }/*# sourceMappingURL=Header.module.css.map */

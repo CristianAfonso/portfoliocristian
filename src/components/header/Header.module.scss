@@ -7,7 +7,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  
+    img{
+      width: 200px;
+    }
     nav ul {
       display: flex;
       list-style: none;
@@ -17,15 +19,6 @@
       li {
         margin: 0 1rem;
   
-        a {
-          color: $light-text;
-          text-decoration: none;
-          font-weight: 500;
-  
-          &:hover {
-            color: $accent-color-2;
-          }
-        }
       }
     }
   }

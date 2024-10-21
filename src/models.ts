@@ -12,6 +12,7 @@ export interface ProficiencyCardPropsModel {
 export interface SkillsContainerModel{
     title: string,
     content: ProficiencyCardPropsModel[],
+    showContent: boolean,
 }
 
 export interface RepoModel{

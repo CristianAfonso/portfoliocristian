@@ -4,7 +4,6 @@
   border-radius: 15px;
   padding: 0;
   border: 1px solid #EAEAEA;
-  margin-bottom: 15px;
 }
 .repository_card .repository_title {
   background-color: #16213E;
@@ -18,6 +17,12 @@
   border-radius: 15px;
   border-bottom: none;
 }
+.repository_card .repository_title:hover {
+  cursor: pointer;
+}
+.repository_card .repository_title:hover > h3, .repository_card .repository_title:hover > svg {
+  filter: drop-shadow(1px 1px 1px #E94560);
+}
 .repository_card .repository_content {
   padding: 15px;
 }
@@ -26,9 +31,20 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: start;
+  width: 100%;
+}
+.repository_card .repository_content .repository_languages_container > .skills_container {
+  width: 50% !important;
 }
 .repository_card .repository_content .repository_languages_container .repository_language {
   padding: 10px;
   border-radius: 15px;
   background-color: #16213E;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.repository_card .repository_content .repository_languages_container .repository_language img {
+  width: 50px !important;
 }/*# sourceMappingURL=Repository.module.css.map */

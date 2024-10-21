@@ -6,6 +6,9 @@ section{
     max-width: 75%;
     margin: 25px auto;
     width: 1600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
 }
 
 .fixed-highlight-border {
@@ -20,3 +23,13 @@ section{
     z-index: 9999;
   }
   
+  a {
+    color: $light-text;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      -webkit-filter: drop-shadow(1px 1px 1px $accent-color-2);
+      filter: drop-shadow(1px 1px 1px $accent-color-2);
+    }
+  }

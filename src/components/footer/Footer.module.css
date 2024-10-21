@@ -8,7 +8,7 @@
   align-items: start;
   bottom: 0;
   flex-grow: 1;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .footer .footer_container {
   width: 100%;
@@ -16,14 +16,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}
-.footer .footer_container a {
-  color: #EAEAEA;
-  text-decoration: none;
-  font-weight: 500;
-}
-.footer .footer_container a:hover {
-  color: #E94560;
 }
 .footer .footer_container .left_footer_container {
   width: calc(50vw - 1px);
